@@ -732,7 +732,7 @@ module riscv_soc
     input [31:0] addr_val;
     input [31:0] word_val;
     begin
-      instr_ram.ram_inst.genblk2.genblk2.ram_inst.mem_array[addr_val] = word_val;
+      instr_ram.ram_inst.genblk3.ram_inst.mem_array[addr_val] = word_val;
     end
   endfunction
 
@@ -741,7 +741,7 @@ module riscv_soc
     input [31:0] addr_val;
     input [31:0] word_val;
     begin
-      data_ram.ram_inst.genblk2.genblk2.ram_inst.mem_array[addr_val] = word_val;
+      data_ram.ram_inst.genblk3.ram_inst.mem_array[addr_val] = word_val;
     end
   endfunction
 `endif
