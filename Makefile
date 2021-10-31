@@ -181,6 +181,7 @@ WAVEFORM_VCD	?=	/tmp/$(ROOT_MOD_VERI).vcd #$(OUT_VERILATOR)/$(ROOT_MOD_VERI).vcd
 WAVEFORM_VERI	:=	$(VERILATOR_TB)/waveform_template/gtkwave_tmpl.gtkw
 VERIL_FLAGS		:=	-O3 										\
 									-Wno-CASEINCOMPLETE 		\
+									-Wno-TIMESCALEMOD				\
 									-Wno-WIDTH							\
 									-Wno-COMBDLY						\
 									-Wno-UNOPTFLAT					\
